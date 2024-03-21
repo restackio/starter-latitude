@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18 as builder
 
 WORKDIR /usr/src/app
 
@@ -10,7 +10,13 @@ COPY .latitude/app .
 
 RUN npm run build
 
-EXPOSE 3000
+FROM node:18 as runner
+WORKDIR /app
 
-CMD ["node", "build"]
+COPY --from=builder /usr/src/app .
 
+ENV PORT 80
+
+CMD node /app/build/index.js
+
+EXPOSE 80
