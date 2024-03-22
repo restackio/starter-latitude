@@ -1,4 +1,4 @@
-FROM node:18 as builder
+FROM node:18.17 as builder
 
 WORKDIR /usr/src/app
 
@@ -6,7 +6,7 @@ COPY latitude.json ./
 
 RUN npm install -g @latitude-data/cli
 
-RUN latitude build --docker
+RUN latitude build --docker --debug
 
 COPY .latitude/app/package*.json ./
 
@@ -16,7 +16,7 @@ COPY .latitude/app .
 
 RUN npm run build
 
-FROM node:18 as runner
+FROM node:18.17 as runner
 WORKDIR /app
 
 COPY --from=builder /usr/src/app .
