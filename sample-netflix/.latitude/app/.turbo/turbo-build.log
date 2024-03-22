@@ -1,0 +1,54 @@
+
+> @latitude-data/server@0.3.3 build /home/runner/work/latitude/latitude/apps/server
+> svelte-kit sync && vite build
+
+3:50:07 PM [vite-plugin-svelte] WARNING: The following packages have a svelte field in their package.json but no exports condition for svelte.
+
+radix-icons-svelte@1.2.1
+
+Please see https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/faq.md#missing-exports-condition for details.
+[36mvite v5.0.12 [32mbuilding SSR bundle for production...[36m[39m
+transforming...
+[32m✓[39m 1989 modules transformed.
+rendering chunks...
+3:50:15 PM [vite-plugin-svelte] WARNING: The following packages have a svelte field in their package.json but no exports condition for svelte.
+
+radix-icons-svelte@1.2.1
+
+Please see https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/faq.md#missing-exports-condition for details.
+[36mvite v5.0.12 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 1950 modules transformed.
+rendering chunks...
+computing gzip size...
+[2m.svelte-kit/output/client/[22m[32m_app/version.json                            [39m[1m[2m  0.03 kB[22m[1m[22m[2m │ gzip:  0.05 kB[22m
+[2m.svelte-kit/output/client/[22m[32m.vite/manifest.json                          [39m[1m[2m  2.00 kB[22m[1m[22m[2m │ gzip:  0.46 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/0.D8NHN8BW.css         [39m[1m[2m 32.45 kB[22m[1m[22m[2m │ gzip:  5.78 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/entry/start.CbQTVxTI.js       [39m[1m[2m  0.07 kB[22m[1m[22m[2m │ gzip:  0.08 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/1.DwuUgALk.js           [39m[1m[2m  1.02 kB[22m[1m[22m[2m │ gzip:  0.59 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.D3uRlNKf.js      [39m[1m[2m  5.62 kB[22m[1m[22m[2m │ gzip:  2.77 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/entry/app.CMnnNeas.js         [39m[1m[2m  5.88 kB[22m[1m[22m[2m │ gzip:  2.39 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/scheduler.D7vga5DI.js  [39m[1m[2m  9.06 kB[22m[1m[22m[2m │ gzip:  3.57 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/entry.C-8EouDb.js      [39m[1m[2m 27.45 kB[22m[1m[22m[2m │ gzip: 10.92 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/0.DgQQOoFS.js           [39m[1m[2m269.31 kB[22m[1m[22m[2m │ gzip: 77.54 kB[22m
+[32m✓ built in 8.47s[39m
+[2m.svelte-kit/output/server/[22m[32m.vite/manifest.json                                     [39m[1m[2m  2.26 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_layout.C-e8yq5x.css              [39m[1m[2m 32.43 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/ssr2.js                                          [39m[1m[2m  0.10 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/client.js                                        [39m[1m[2m  0.26 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36minternal.js                                             [39m[1m[2m  0.31 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/fallbacks/error.svelte.js                       [39m[1m[2m  0.92 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/index.js                                         [39m[1m[2m  2.68 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/endpoints/api/queries/_...query_/_server.ts.js  [39m[1m[2m  5.12 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/exports.js                                       [39m[1m[2m  5.96 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/internal.js                                      [39m[1m[2m  6.07 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/ssr.js                                           [39m[1m[2m  8.46 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mindex.js                                                [39m[1m[2m113.77 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/pages/_layout.svelte.js                         [39m[1m[2m232.93 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/index2.js                                        [39m[1m[2m263.00 kB[22m[1m[22m
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-node
+  ✔ done
+[32m✓ built in 17.66s[39m
