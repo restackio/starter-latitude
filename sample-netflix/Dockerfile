@@ -2,6 +2,12 @@ FROM node:18 as builder
 
 WORKDIR /usr/src/app
 
+COPY latitude.json ./
+
+RUN npm install -g @latitude-data/cli
+
+RUN latitude build --docker
+
 COPY .latitude/app/package*.json ./
 
 RUN npm install

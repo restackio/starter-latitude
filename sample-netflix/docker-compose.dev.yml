@@ -1,0 +1,9 @@
+version: '3'
+services:
+  latitude:
+    build: .
+    ports:
+      - '3000:3000'
+    # volumes:
+    #   - ./sample-netflix/queries:/app/queries
+    #   - ./sample-netflix/views:/app/views
