@@ -1,6 +1,12 @@
-FROM node:18 as builder
+FROM node:18.17 as builder
 
 WORKDIR /usr/src/app
+
+RUN npm install -g @latitude-data/cli
+
+COPY latitude.json ./latitude.json
+
+RUN latitude prepare
 
 COPY .latitude/app/package*.json ./
 
@@ -10,13 +16,13 @@ COPY .latitude/app .
 
 RUN npm run build
 
-FROM node:18 as runner
+FROM node:18.17 as runner
 WORKDIR /app
 
 COPY --from=builder /usr/src/app .
 
-ENV PORT 80
+ENV PORT 3500
 
 CMD node /app/build/index.js
 
-EXPOSE 80
+EXPOSE 3500
