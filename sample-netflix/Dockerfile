@@ -15,8 +15,8 @@ WORKDIR /app
 
 COPY --from=builder /usr/src/app .
 
-ENV PORT 80
+ENV PORT 3000
 
-CMD node /app/build/index.js
+CMD node build/index.js
 
-EXPOSE 80
+EXPOSE 3000
